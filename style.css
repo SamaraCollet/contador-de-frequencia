@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #ffab1d, #ff93d6) 
+}
+
+header {
+    width: 100%;
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: #ffab1d;
+    color: #e92da1;
+    text-shadow: 2px 1px 1px #ffffff;
+}
+
+.container {
+    display: flex;
+    padding-top: 4vh;
+    width: 40vw;
+    height: 100px;
+    flex-direction: column;
+    align-self: center;
+}
+.container textarea {
+    min-height: 200px;
+    border: 1px solid #e92da1;
+}
+
+#countButton {
+    border: 2px solid #e92da1;
+    border-radius: 10px;
+    width: 200px;
+    background-color: pink;
+    text-transform: uppercase;
+    margin: 3vh auto;
+    color: #e92da1;
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 10px;
+}
+
+#countButton:hover {
+    background-color: rgb(252, 155, 171); 
+}
+
+@media (max-width:1200px) {
+    body {
+        background-image: linear-gradient(to bottom, #888bf4, #5151c6) 
+    }
+    header {
+        background-color: #888bf4;
+    }
+  }
+  @media (min-width:768px) and (max-width:979px) {
+    body {
+        background-image: linear-gradient(to bottom, #2dc8ed, #548af0) 
+    }
+    header {
+        background-color: #2dc8ed;
+    }
+  }
+  @media (max-width:767px) {
+    body {
+        background-image: linear-gradient(to bottom, #42df90, #149e8e) 
+    }
+    header {
+        font-size: 1em;
+        background-color: #42df90;
+    }
+  }
+  @media (max-width:480px) {
+    body {
+      background: #8A2BE2;
+    }
+  }
